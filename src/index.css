@@ -4,7 +4,7 @@ body {
   margin: 0;
 }
 .container {
-  height: 100vh;
+  height: calc(100vh - 20px);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -28,6 +28,15 @@ body {
   z-index: -1;
   -webkit-animation: App_wave_3CtRm 8s ease-in-out infinite alternate;
   animation: App_wave_3CtRm 8s ease-in-out infinite alternate;
+}
+@-webkit-keyframes App_wave_3CtRm {
+  0% {
+    transform: translateX(-50%) skew(0deg, -8deg);
+  }
+
+  to {
+    transform: translateX(-30%) skew(8deg, -4deg);
+  }
 }
 .card {
   background-color: #fff;
